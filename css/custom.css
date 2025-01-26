@@ -14,6 +14,9 @@
   --verde-scuro: #384737;
   --verde-chiaro: #b5c6b4;
 }
+html{
+  height: 100%;
+}
 
 body {
   margin-bottom: 50px
@@ -25,9 +28,27 @@ a {
 
 .container {
   margin: auto;
-  max-width: 662px;
-  padding: 0 20px;
+  max-width: 40%;
+  /*padding: 0 20px;*/
 }
+
+.container-background{
+              background-image:  url(../img/Sfondo.png);
+  background-repeat: repeat-y repeat-x;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.chi-sono-card{
+  background-color: white;
+  border: 1px solid var(--verde-scuro);
+  border-radius: 10px;
+  width: 40%;
+  height: 80%;
+  margin: auto;
+padding:0px !important;
+}
+
 /* Navigation */
 .main-nav {
   padding-top: 30px;
@@ -37,7 +58,8 @@ a {
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
-  position: relative;
+  position: sticky;
+  top:0;
 }
 
 .group.top-nav {
