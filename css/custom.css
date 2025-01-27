@@ -623,7 +623,11 @@ footer .social li {
 /* Responsive */
 @media only screen and (max-width: 767px) {
   .intro {
-    padding-top: 50px
+    padding-top: 10px
+  }
+
+  .content .post h1:after {
+   margin-top:25px;
   }
 
   img.img-intro {
