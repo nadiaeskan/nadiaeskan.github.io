@@ -16,14 +16,39 @@
 }
 html{
   height: 100%;
+  font-family: "Oswald", sans-serif;
+  background-color:#eff5ef;
 }
 
 body {
-  margin-bottom: 50px
+  margin-bottom: 50px;
+  font-family: "Oswald", sans-serif;
+  background-color:#eff5ef;
 }
 
 a {
   font-family: "Oswald", sans-serif
+}
+
+.updates{
+  margin-bottom:25px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.updates p{
+  margin-bottom:0px;
+}
+
+.updates p:hover{
+  color:var(--verde-chiaro);
+}
+
+.updates strong{
+color: var(--verde-scuro);
+margin-right:4px;
+text-decoration: underline;
 }
 
 .container {
@@ -53,12 +78,12 @@ padding:0px !important;
 .main-nav {
   padding-top: 30px;
   padding-bottom: 25px;
-  background-color: #FFF;
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
   position: sticky;
+  background-color: #eff5ef;
   top:0;
 }
 
@@ -90,7 +115,7 @@ padding:0px !important;
 
 .navigation-toggle .logo {
   font-size: 20px;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 
 .top-nav .item-nav li.active a {
@@ -172,7 +197,7 @@ img.img-intro {
 }
 
 .content {
-  padding-top: 75px
+  padding-top: 50px
 }
 
 .post {
@@ -210,7 +235,9 @@ img.img-intro {
 }
 
 .content .post img {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  max-width:200px;
+  border-radius: 50%;
 }
 
 .content .post hr {
@@ -228,6 +255,7 @@ img.img-intro {
   left: 1px;
   width: 66px;
   height: 7px;
+ 
 }
 .content .post h1:after {
   content: url(../img/separator.png);
@@ -243,7 +271,6 @@ img.img-intro {
 
 a.read-more {
   padding: 5px 10px;
-  background-color: #FFF;
   border: 1px solid var(--verde-scuro);
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -623,17 +650,24 @@ footer .social li {
 /* Responsive */
 @media only screen and (max-width: 767px) {
   .intro {
-    padding-top: 10px
+    padding-top: 20px
   }
 
-  .content .post h1:after {
-   margin-top:25px;
+  .container{
+    max-width: 70%;
+  }
+
+  .content .post img {
+   max-width: 150px;
+   float:right !important;
+   margin-left:20px;
   }
 
   img.img-intro {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 70px;
   }
 
   .logo-w {
