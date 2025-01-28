@@ -13,17 +13,18 @@
 :root {
   --verde-scuro: #384737;
   --verde-chiaro: #b5c6b4;
+  --verde-bg:#e2e9e2;
 }
 html{
   height: 100%;
   font-family: "Oswald", sans-serif;
-  background-color:#eff5ef;
+  background-color:var(--verde-bg);
 }
 
 body {
   margin-bottom: 50px;
   font-family: "Oswald", sans-serif;
-  background-color:#eff5ef;
+  background-color:var(--verde-bg);
 }
 
 a {
@@ -65,7 +66,7 @@ text-decoration: underline;
 }
 
 .chi-sono-card{
-  background-color: white;
+  background-color: var(--verde-bg);
   border: 1px solid var(--verde-scuro);
   border-radius: 10px;
   width: 40%;
@@ -83,7 +84,7 @@ padding:0px !important;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
   position: sticky;
-  background-color: #eff5ef;
+  background-color: var(--verde-bg);
   top:0;
 }
 
@@ -116,6 +117,10 @@ padding:0px !important;
 .navigation-toggle .logo {
   font-size: 20px;
   /*text-transform: capitalize;*/
+}
+
+.navigation-toggle{
+  background-color: var(--verde-bg);
 }
 
 .top-nav .item-nav li.active a {
@@ -651,6 +656,10 @@ footer .social li {
 @media only screen and (max-width: 767px) {
   .intro {
     padding-top: 20px
+  }
+
+  .chi-sono-card{
+width: 70%;
   }
 
   .container{
