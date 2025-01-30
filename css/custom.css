@@ -100,7 +100,7 @@ text-decoration: underline;
   height: 85%;
   margin: auto;
 padding:20px !important;
-font-size:14pt;
+font-size:120%;
 }
 
 .chi-sono-avatar{
@@ -131,7 +131,7 @@ font-size:14pt;
 }
 
 .chi-sono-elenco{
-  font-size: 16pt;
+  font-size: 110%;
  
 }
 
@@ -724,6 +724,7 @@ footer .social li {
 
   .chi-sono-card{
 width: 80%;
+
   }
 
   .chi-sono-avatar{
@@ -735,7 +736,6 @@ width: 80%;
   }
 
   .chi-sono-elenco{
-    font-size: 14pt;
   }
 
   .container{
@@ -789,4 +789,15 @@ width: 80%;
   .chi-sono-text{
     height: 65%;
   }
+
+  
+}
+
+@media only screen and (max-height:600px)
+{
+  .chi-sono-text{
+    height: 55%;
+  }
+
+  
 }
