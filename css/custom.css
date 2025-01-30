@@ -132,7 +132,8 @@ font-size:120%;
 
 .chi-sono-elenco{
   font-size: 110%;
- 
+ float:right;
+ margin-right: 30px;
 }
 
 .chi-sono-elenco p{
@@ -724,7 +725,7 @@ footer .social li {
 
   .chi-sono-card{
 width: 80%;
-
+font-size: 100%;
   }
 
   .chi-sono-avatar{
@@ -790,7 +791,13 @@ width: 80%;
     height: 65%;
   }
 
-  
+  .chi-sono-avatar{
+    width: 130px;
+  }
+
+  .chi-sono-card{
+    font-size: 100%;
+  }
 }
 
 @media only screen and (max-height:600px)
@@ -799,5 +806,11 @@ width: 80%;
     height: 55%;
   }
 
-  
+  .chi-sono-avatar{
+    width: 110px;
+  }
+
+  .chi-sono-card{
+    font-size: 100%;
+  }
 }
