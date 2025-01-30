@@ -19,6 +19,9 @@ html{
   height: 100%;
   font-family: "Oswald", sans-serif;
   background-color:var(--verde-bg);
+
+  /* scrollbar-color: var(--verde-scuro) var(--verde-chiaro);
+  scrollbar-width: thin !important; */
 }
 
 body {
@@ -27,9 +30,32 @@ body {
   background-color:var(--verde-bg);
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--verde-scuro) var(--verde-chiaro);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--verde-chiaro);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--verde-scuro);
+  border-radius: 20px;
+  border: 3px solid var(--verde-chiaro);
+}
+
 a {
   font-family: "Oswald", sans-serif
 }
+
+
 
 .updates{
   margin-bottom:25px;
@@ -69,10 +95,50 @@ text-decoration: underline;
   background-color: var(--verde-bg);
   border: 1px solid var(--verde-scuro);
   border-radius: 10px;
-  width: 40%;
-  height: 80%;
+  width: 60%;
+  min-height: 50%;
+  height: 85%;
   margin: auto;
-padding:0px !important;
+padding:20px !important;
+font-size:14pt;
+}
+
+.chi-sono-avatar{
+  float:left;
+  border-radius: 50%;
+  border:2px solid var(--verde-scuro);
+  margin-right:10px;
+  width: 250px;
+}
+
+.chi-sono-text{
+ float: left;
+ margin-top:10px;
+ overflow-y: auto;
+ height: 60%;
+ padding-bottom: 10px;
+}
+
+.chi-sono-text p{
+  max-height: inherit;
+  padding:5px;
+  
+  
+}
+
+.chi-sono-text br{
+  display: block;
+  margin-bottom: 10px;
+  content: "";
+}
+
+.chi-sono-elenco{
+  font-size: 16pt;
+ 
+}
+
+.chi-sono-elenco p{
+  margin-bottom:0;
 }
 
 /* Navigation */
@@ -659,7 +725,19 @@ footer .social li {
   }
 
   .chi-sono-card{
-width: 70%;
+width: 80%;
+  }
+
+  .chi-sono-avatar{
+    width: 150px;
+  }
+
+  .chi-sono-text{
+    height: 70%;
+  }
+
+  .chi-sono-elenco{
+    font-size: 14pt;
   }
 
   .container{
