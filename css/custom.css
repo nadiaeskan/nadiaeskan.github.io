@@ -121,9 +121,7 @@ font-size:14pt;
 
 .chi-sono-text p{
   max-height: inherit;
-  padding:5px;
-  
-  
+  margin-bottom:0px;
 }
 
 .chi-sono-text br{
@@ -782,5 +780,13 @@ width: 80%;
 
   .foot-cp {
     padding-top: 10px
+  }
+}
+
+
+@media only screen and (max-height:700px)
+{
+  .chi-sono-text{
+    height: 65%;
   }
 }
