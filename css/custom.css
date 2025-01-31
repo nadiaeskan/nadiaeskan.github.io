@@ -89,6 +89,7 @@ text-decoration: underline;
   background-repeat: repeat-y repeat-x;
   background-attachment: fixed;
   height: 100%;
+  padding-bottom:20px;
 }
 
 .chi-sono-card{
@@ -132,7 +133,6 @@ font-size:120%;
 
 .chi-sono-elenco{
   font-size: 110%;
- float:right;
  margin-right: 30px;
 }
 
@@ -803,7 +803,7 @@ font-size: 100%;
 @media only screen and (max-height:600px)
 {
   .chi-sono-text{
-    height: 55%;
+    height: 60%;
   }
 
   .chi-sono-avatar{
