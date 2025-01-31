@@ -84,6 +84,12 @@ text-decoration: underline;
   /*padding: 0 20px;*/
 }
 
+.archivio-cover{
+  border-radius: 0% !important;
+  border:2px solid var(--verde-scuro);
+  margin-left: 20px;
+}
+
 .container-background{
               background-image:  url(../img/Sfondo.png);
   background-repeat: repeat-y repeat-x;
