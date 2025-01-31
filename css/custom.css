@@ -133,7 +133,6 @@ font-size:120%;
 
 .chi-sono-elenco{
   font-size: 110%;
- margin-right: 30px;
 }
 
 .chi-sono-elenco p{
@@ -736,9 +735,7 @@ font-size: 100%;
     height: 70%;
   }
 
-  .chi-sono-elenco{
-  }
-
+ 
   .container{
     max-width: 70%;
   }
@@ -811,6 +808,11 @@ font-size: 100%;
   }
 
   .chi-sono-card{
-    font-size: 100%;
+    font-size: 90%;
   }
+
+  .chi-sono-elenco{
+    font-size: 90%;
+  }
+
 }
